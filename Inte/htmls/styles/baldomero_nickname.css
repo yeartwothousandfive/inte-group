@@ -1,0 +1,171 @@
+@font-face {
+    font-family: BleedCow;
+    src: url(../fonts/BleedCow.ttf);
+}
+
+@font-face {
+    font-family: JMH;
+    src: url(../fonts/JMH.ttf);
+}
+
+@font-face {
+    font-family: PunkType;
+    src: url(../fonts/PunkType.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+.title-line {
+    text-align: center;
+}
+
+header h1 {
+    font-family: BleedCow;
+    color: #740909;
+    font-size: 60px;
+}
+
+header hr {
+    display: none;
+}
+
+
+.motto {
+    font-family: PunkType;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+}
+
+
+.info-container {
+    text-align: center;
+    margin: 30px auto;
+    width: 70%;
+}
+
+.name-birthday, .age-socials {
+    margin-bottom: 20px;
+}
+
+
+.label {
+    font-family: JMH;
+    font-size: 20px;
+    color: #540404;
+    font-weight: bold;
+}
+
+.value {
+    font-family: JMH;
+    font-size: 18px;
+    color: #222;
+}
+
+.info-container hr {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+
+.aboutme {
+    background-color: #222;
+    text-align: center;
+    padding: 30px;
+}
+
+.image-and-list {
+    display: inline-block;
+    text-align: left;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.profile_image {
+    width: 350px;
+    border: 5px solid #740909;
+    padding: 10px;
+    background-color: white;
+}
+
+.aboutme-list-container {
+    margin-top: 20px;
+}
+
+.list {
+    list-style: none;
+    color: white;
+}
+
+.hobbies {
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.list_image {
+    display: none;
+}
+
+
+.hobbies p {
+    font-family: JMH;
+    font-size: 28px;
+    color: #d1d1d1;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hobbies ol, .hobbies ul {
+    font-family: JMH;
+    color: #d1d1d1;
+    margin-left: 30px;
+    line-height: 1.6;
+}
+
+.hobbies li {
+    margin-bottom: 5px;
+}
+
+.hobbies a {
+    color: #740909;
+    text-decoration: none;
+}
+
+.hobbies a:hover {
+    text-decoration: underline;
+}
+
+.aboutme-text-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.aboutme-text {
+    font-family: BleedCow;
+    color: #d1d1d1;
+    font-size: 50px;
+}
+
+.aboutme hr {
+    display: none;
+}
