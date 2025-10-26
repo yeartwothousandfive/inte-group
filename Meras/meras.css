@@ -1,0 +1,462 @@
+@font-face {
+    font-family: BleedCow;
+    src: url(../fonts/BleedCow.ttf);
+}
+
+@font-face {
+    font-family: JMH;
+    src: url(../fonts/JMH.ttf);
+}
+
+@font-face {
+    font-family: PunkType;
+    src: url(../fonts/PunkType.otf);
+}
+
+@font-face {
+    font-family: CCWW;
+    src: url(../fonts/CCWWRoman.ttf) ;
+}
+
+/*  ------------------------------------------------------ PROPER CODE HERE  ------------------------------------------------------  */
+/* ------------------------------------------------------------------------------------- ALL, HEADER, INFO CONTAINER */ 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: JMH;
+}
+
+body {
+    background-color: #d2dbeb;
+}
+
+header {
+    position: relative;
+    margin: 1vw 3vw 0 3vw;
+    letter-spacing: 0.1vw;
+}
+
+.title-line {
+    display: flex;
+    align-items: baseline; 
+}
+
+header h1 {
+    font-family: BleedCow;
+    color: #01162b;
+    font-size: 4vw;
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: 0.1vw;
+}
+
+header hr {
+    flex: 1;
+    border: none;
+    border-top: 0.3vw solid #222;
+    margin-left: 2vw;
+    border-radius: 0.1vw;
+    letter-spacing: 0.1vw;
+}
+
+.motto {
+    font-family: PunkType;
+    font-size: 3vw;
+    font-style: italic, bold;
+    position: relative;
+    margin: -7.5vw 5vw 5vw 70vw;
+    right: -5vw;
+    color: #222;
+}
+
+.info-container {
+    margin: 5vw 3vw;
+    display: flex;
+    gap: 5vw;
+}
+
+.name-birthday, .age-socials {
+    flex: 1; 
+}
+
+  
+.label {
+    display: flex;              
+    justify-content: space-between; 
+    align-items: baseline;
+    letter-spacing: -0.08vw;
+    color: #01162b;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.label a {
+    color: #222;
+    text-decoration: none;
+}
+
+.label a:hover {
+    color: #01162b;
+    text-decoration: none;
+    text-shadow: 0 0 5px #01162b;
+}
+
+.value {
+    text-align: right;
+    font-size: 1.4vw;
+    color: #01162b;
+}
+
+.info-container hr {
+    border: none;
+    border-top: 0.15vw solid #01162b;
+    opacity: 0.7;
+    margin: 0 0 1vw 0;
+}
+
+/* ------------------------------------------------------------------------------ ABOUT ME CONTAINER */ 
+.aboutme {
+    background-color: #01162b;
+    margin: -3vw 0;
+}
+
+/* ------------------------------------------------------------------------------ star */ 
+
+.star_image {
+    width: 30vw;
+    height: 20vw;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    position: absolute;
+    top: -5vw;
+    left: -7vw;
+    opacity: 0.2;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+.starblur_image {
+    width: 30vw;
+    height: 20vw;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    position: absolute;
+    top: -10vw;
+    right: -10vw;
+    opacity: 0.2;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+.starblurb_image {
+    width: 30vw;
+    height: 20vw;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    position: absolute;
+    bottom: 50vw;
+    left: 5vw;
+    opacity: 0.2;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+
+
+/* ------------------------------------------------------------------------------ star end */ 
+
+
+.profile_image {
+    width: 35vw;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    margin: 3vw;
+    border: 2vw solid #6a90b4;
+    border-bottom: 4vw solid #03213d;
+    border-top: 4vw solid #011120;
+}
+
+.image-and-list {
+    display: flex;
+}
+
+.aboutme-list-container {
+    margin: 5vw 3vw 3vw 0vw;
+    flex: 1;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hobbies {
+    position: relative;
+    margin-bottom: 2.5vw;
+}
+
+
+.hobbies-list li button {
+    display: inline;
+    background-color: #d2dbeb;
+    border: none;
+    font-size: 1.3vw;
+    text-align: start;
+    letter-spacing: 0.2vw;
+}
+
+.hobbies-list li button:hover {
+    display: inline;
+    background-color: #d2dbeb;
+    border: none;
+    font-size: 1.3vw;
+    text-align: start;
+    color: #01162b;
+}
+
+.list_image {
+    width: 99%;
+    aspect-ratio: 6 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.1vw;
+    border-left: solid 0.5vw #d2dbeb;
+}
+
+.hobbies p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.8vw;
+    text-align: center;
+    color: #d2dbeb;
+}
+
+.aboutme-text-container { 
+    display: flex;
+    margin: -9vw 3vw;
+    align-items: baseline;
+}
+
+.aboutme-text {
+    font-family: BleedCow;
+    color: #d2dbeb;
+    font-size: 5vw;
+}
+
+.aboutme hr {
+    flex: 1;
+    border: none;
+    border-top: 0.5vw solid #d2dbeb;
+    margin-left: 2vw;
+    border-radius: 0.1vw;
+}
+
+.hobby-cards {
+  display: none;
+}
+
+/* ------------------------------------------------------------------------------------ HOBBIES PART */
+
+.hobbies-container {
+    background-color: #d2dbeb;
+    margin: 0 0 3vw 0;
+}
+
+.hobbies-text-container {
+    margin: 9vw 0 0 3vw;
+    display: flex;
+    align-items: baseline;
+}
+
+.hobbies-text, #hobbies  {    
+    font-family: BleedCow;
+    font-size: 5vw;
+    font-weight: normal;
+    color: #011120;
+}
+
+.hobbies-text-container hr {
+    flex: 1;
+    border: none;
+    border-top: 0.5vw solid #222;
+    margin: -2vw 3vw 0 2vw;
+    border-radius: 0.1vw;
+}
+
+.hobbies-list-container {
+    margin: -1vw 8vw 0 7vw;
+    flex: 0 0 20%;    
+}
+
+.hobbies-list {
+    font-size: 1.5vw;
+    list-style-position: outside;
+}
+
+.hobbies-list li {
+    margin: 0 0 5vw 0;
+    padding: 0 0 0 1.5vw;
+    letter-spacing: -0.1vw;
+}
+
+.hobbies-list li p {
+    font-family: JMH;
+    font-family: 2vw;
+}
+
+.hobbies-list li::marker {
+    font-family: BleedCow;
+    font-size: 2.7vw;
+    color: #222;
+}
+
+.hobbies-list-cards-container {
+    display: flex;
+}
+
+/*  hobby cards container  */
+.hobby1-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1vw;
+    margin: 0 0 0 -8vw;
+}
+
+.hobby-card {
+    flex: 0 0 auto;
+    background-color: #01162b;
+    width: 30vw;
+    padding: 1vw;
+    text-align: center;
+}
+
+/*  hobby infos  */
+
+.hobby1-image {
+    width: 30vw;
+}
+
+.hobby1-title {
+    color: #d2dbeb;
+    margin: 0.5vw 0;
+    font-family: CCWW;
+}
+
+.hobby1-description {
+    color: #d2dbeb;
+    font-family: CCWW;
+}
+
+/* ------------------------------------------------------------------------------------ FACTS CONTAINER */
+.facts-container {
+    background-color: #01162b;
+    text-align: center;
+}
+
+.fun-fact-text-container {
+    display: flex;               
+    align-items: center;        
+    justify-content: center;     
+    gap: 2vw;                    
+    margin: 0 0 3vw 0;
+}
+
+.fun-fact-text, #fun-fact {
+    font-family: BleedCow;
+    font-size: 5vw;
+    margin: 0;                   
+    white-space: nowrap;   
+    font-weight: normal;
+    color: #d2dbeb;    
+}s
+
+.fun-fact-text-container hr {
+  flex: 1;                  
+  border: none;
+  border-top: 0.5vw solid #d2dbeb;
+  border-radius: 0.09vw;
+  margin: 0 3vw;
+}
+
+
+.fun-fact-info {
+    margin: -3vw 0 0 0;
+    padding: 0 0 2vw 0;
+}
+
+.fun-fact-info p {
+    color: #d2dbeb;
+    font-size: 1.3vw;
+    font-family: JMH;
+    text-align: center;
+    margin: -2vw 15vw 3vw 15vw;
+    letter-spacing: 0.1vw;
+}
+
+.fun-fact-info span {
+    font-family: JMH;
+    font-size: 2vw;
+    vertical-align: middle;
+    margin: 0 1vw;
+}
+
+/* ------------------------------------------------------------------------------------ DREAMS */
+.dreams-container {
+    background-color: #d2dbeb;
+    margin: -2vw 0 0 0;
+}
+
+.dreams-text-container {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 3vw 0;
+}
+
+.dreams-text, #dreams {
+    font-family: BleedCow;
+    font-size: 5vw;
+    margin: 0 0 0 3vw;
+    font-weight: normal;
+    color: #011120;
+}
+
+.dreams-text-container hr {
+    flex: 1;
+    border: none;
+    border-top: 0.5vw solid #222;
+    margin: 0 3vw 0 2vw;
+    border-radius: 0.1vw;
+}
+
+.dreams-info {
+    text-align: center;
+    margin: -2vw 15vw 3vw 15vw;
+    letter-spacing: 0.1vw;
+}
+
+/* ---------------------------------------- DISCORD */
+.hobby2-image {
+    width: 30vw;
+    aspect-ratio: 16 / 9;
+}
+/* --------------------------------------------change color*/
+.hobbies a,
+.fun-facts a,
+.dreams a {
+    font-family: JMH;
+    color: #ffffff;          
+    text-decoration: none;  
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hobbies a:hover,
+.fun-facts a:hover,
+.dreams a:hover {
+    color: #6a90b4;
+    text-shadow: 0 0 5px #011120;
+}
+
