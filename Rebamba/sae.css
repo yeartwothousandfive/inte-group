@@ -1,0 +1,345 @@
+@font-face {
+    font-family: GBHB;
+    src: url(fonts/GoboldHighBold.otf);
+}
+
+@font-face {
+    font-family: MB;
+    src: url(fonts/MontserratBlack.ttf);
+}
+
+@font-face {
+    font-family: MBB;
+    src: url(fonts/MontserratBold.ttf);
+}
+
+body {
+    background-color: #5A051A;
+}
+
+.parent {
+    background-color: #5A051A;
+    text-transform: uppercase;
+    
+}
+
+.main-grid {
+    margin: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 0.8vw;
+    row-gap: 0.8vw;
+    justify-items: stretch;
+}
+
+.left-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    position: relative;
+}
+
+.left-main-text-container {
+    font-family: MB;
+    line-height: 0;
+    font-size: 3.3vw;
+    letter-spacing: 0.05vw;
+}
+
+.group-text {
+    margin: 1.3vw 0;
+    color: #EE1E52;
+}
+
+.fun-fact-text {
+    margin: 3.7vw 0 2vw 0;
+    color: #c2c2c2;
+}
+
+.fun-fact1 {
+    margin: 0;
+    font-family: GBHB;
+    font-size: 7.5vw;
+    color: #c2c2c2;
+}
+
+.fun-fact1 span {
+    color: #EE1E52;
+}
+
+.fun-fact-image {
+    position: absolute;
+    top: 15.5%;
+    margin: 0;
+    opacity: 1;
+    transition: 0.2s ease-out;
+}
+
+.fun-fact-image:hover {
+    position: absolute;
+    top: 15%;
+    opacity: 0;
+    margin: 0;
+}
+
+.fun-fact2 {
+    margin: 0.5vw 0 0 0;
+    font-family: MB;
+    font-size: 1.75vw;
+    color: #c2c2c2;
+    line-height: 2.5vw;
+}
+
+.fun-fact2 span {
+    color: #EE1E52;
+}
+
+.center-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 0.8vw 0.8vw;
+}
+
+.center-nickname-motto-container {
+    text-align: center;
+}
+
+.nickname-text {
+    margin: -1.7vw 0 0 0;
+    font-family: GBHB;
+    font-size: 14.8vw;
+    color: #c2c2c2;
+}
+
+.nickname-text span {
+    color: #EE1E52;
+}
+
+.motto-text {
+    margin: -1.7vw 0 0 0;
+    font-family: MB;
+    font-size: 2.55vw;
+    letter-spacing: 0.1vw;
+    color: #c2c2c2;
+}
+
+.motto-text span {
+    color: #EE1E52;
+}
+
+.profile {
+    margin: 0;
+}
+.right-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 0.8vw 0.8vw;
+}
+
+.hobbies-text{
+    margin: -1.3vw 0;
+    font-family: MB;
+    font-size: 5vw;
+    color: #EE1E52;
+}
+
+.right-visible-part {
+    display: flex;
+    flex-direction: column;
+    gap: 1.245vw;
+    z-index: 3;
+
+}
+
+.right-visible-part img {
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.2s ease-out;
+}
+
+.right-visible-part img:hover {
+    opacity: 0;
+}
+
+.right-hidden-part {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    text-align: center;
+    color: #c2c2c2;
+}
+
+.chess-text {
+    margin: 3.5vw 0 0 0;
+    font-size: 13vw;
+    letter-spacing: 1.4vw;
+    font-family: GBHB;
+}
+
+.manga-text {
+    text-align: center;
+    margin: -1vw 0 0 0;
+    font-size: 13vw;
+    font-family: GBHB;
+    letter-spacing: 0.8vw;
+}
+
+.date-text {
+    position: absolute;
+    top: 82%;
+    text-align: start;
+    font-size: 6.9vw;
+    font-family: GBHB;
+    line-height: 7.5vw;
+    margin-right: 0.5vw;
+}
+
+.date-text span {
+    color: #EE1E52;
+}
+
+.second-grid {
+    margin: -0.3vw 1vw;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+    column-gap: 0.8vw;
+    row-gap: 0.8vw;
+    justify-items: stretch;
+    position: relative;
+    z-index: 2;
+}
+
+.second-container {
+    margin: 0 0 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    position: relative;
+    z-index: 1;
+
+}
+
+.left-container2 {
+    display: inline;
+}
+
+.for-grid {
+    margin: -0.3vw 0 1vw 0;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+}
+
+.girlfriend-text {
+    font-family: MB;
+    font-size: 3.1vw;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: start;
+    margin: 0 0 0 0;
+    transform: rotate(180deg);
+    letter-spacing: 0.1vw;
+    color: #c2c2c2;
+}
+
+.girlfriend-text span {
+    letter-spacing: 0.3vw;
+    color: #EE1E52;
+}
+
+.you {
+    margin: 0;
+}
+
+.cyanandsae {
+    margin: 0.8vw 0 0 0.2vw;
+    width: 30vw;
+}
+
+.center-container2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    text-align: center;
+}
+
+.fave-text {
+    margin: -0.7vw 0 0 0;
+    font-family: GBHB;
+    font-size: 6.4vw;
+    letter-spacing: 0.1vw;
+    color: #EE1E52;
+}
+
+.favourite-artist {
+    text-align: left;
+    margin: 0;
+    font-family: MB;
+    font-size: 3.9vw;
+    line-height: 4.6vw;
+    color: #c2c2c2;
+}
+
+.favourite-artist span {
+    color: #8b0000;
+}
+
+.favourite-artist .steveee{
+    color: #EE1E52;
+}
+
+.dreams-text {
+    margin: -0.8vw 0 0 0;
+    font-family: MB;
+    font-size: 3.5vw;
+    color: #c2c2c2;
+}
+
+.dreams-text span {
+    color: #EE1E52;
+}
+
+.dream1-text, .dream2-text {
+    margin: 0;
+    font-family: GBHB;
+    font-size: 3.2vw;
+    color: #c2c2c2;
+}
+
+.dream1-text span, .dream2-text span {
+    color: #EE1E52;
+}
+
+.instagram, .fave-page, .spotify {
+    margin: 0.5vw 0 0 0;
+    font-family: MB;
+    font-size: 2.3vw;
+    color: #c2c2c2;
+    text-align: end;
+}
+
+a {
+    text-decoration: none;
+    color: #8b0000;
+}
+
+a:hover {
+    color: #EE1E52;
+}
+
+img {
+    width: 100%;
+}
