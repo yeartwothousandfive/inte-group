@@ -75,14 +75,12 @@ h1 {
 }
 
 .card-leader img {
-    width: 100%;
-    max-width: 150px; /* Set a max-width for the image */
-    width: 100%; /* Allow it to be smaller on mobile if needed */
-    display: block; /* Needed for margin auto to work */
+    width: 100px; 
+    display: block;
     margin: 0 auto;
     border-radius: 0.5vw;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
+   
 }   
 .card img {
     width: 100%;
