@@ -65,7 +65,7 @@ h1 {
 }
 
 .card-leader {
-    flex: 0 0 200px; /* Set a fixed size for the leader card */
+
     background-color: white; 
     border-radius: 10px;
     padding: 1vw;
